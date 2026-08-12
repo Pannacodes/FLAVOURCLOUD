@@ -1,0 +1,39 @@
+.main-layout {
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+}
+
+.recipe-list ul {
+  list-style: none;
+  padding: 0;
+}
+
+.recipe-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #fff7f0;
+  padding: 12px;
+  margin: 10px 0;
+  border-radius: 10px;
+  border: 1px solid #eee;
+}
+
+.status {
+  font-size: 18px;
+  margin-right: 20px;
+}
+
+.delete-btn {
+  background: #ff4d4d;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.delete-btn:hover {
+  background: #d90000;
+}

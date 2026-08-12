@@ -1,0 +1,182 @@
+[
+  {
+    "id": 1,
+    "name": "Paneer Butter Masala",
+    "veg": true,
+    "category": "Indian",
+    "image": "https://picsum.photos/seed/paneer/300/200",
+    "calories": 320,
+    "servings": 2
+  },
+  {
+    "id": 2,
+    "name": "Chicken Curry",
+    "veg": false,
+    "category": "Indian",
+    "image": "https://picsum.photos/seed/chicken/300/200",
+    "calories": 450,
+    "servings": 3
+  },
+  {
+    "id": 3,
+    "name": "Veg Biryani",
+    "veg": true,
+    "category": "Indian",
+    "image": "https://picsum.photos/seed/biryani/300/200",
+    "calories": 380,
+    "servings": 2
+  },
+  {
+    "id": 4,
+    "name": "Egg Omelette",
+    "veg": false,
+    "category": "Breakfast",
+    "image": "https://picsum.photos/seed/omelette/300/200",
+    "calories": 210,
+    "servings": 1
+  },
+  {
+    "id": 5,
+    "name": "Greek Salad",
+    "veg": true,
+    "category": "Healthy",
+    "image": "https://picsum.photos/seed/salad/300/200",
+    "calories": 150,
+    "servings": 1
+  },
+  {
+    "id": 6,
+    "name": "Grilled Fish",
+    "veg": false,
+    "category": "Seafood",
+    "image": "https://picsum.photos/seed/fish/300/200",
+    "calories": 290,
+    "servings": 2
+  },
+  {
+    "id": 7,
+    "name": "Veg Pasta",
+    "veg": true,
+    "category": "Italian",
+    "image": "https://picsum.photos/seed/pasta/300/200",
+    "calories": 330,
+    "servings": 2
+  },
+  {
+    "id": 8,
+    "name": "Beef Steak",
+    "veg": false,
+    "category": "Western",
+    "image": "https://picsum.photos/seed/steak/300/200",
+    "calories": 520,
+    "servings": 1
+  },
+  {
+    "id": 9,
+    "name": "Veg Sandwich",
+    "veg": true,
+    "category": "Breakfast",
+    "image": "https://picsum.photos/seed/sandwich/300/200",
+    "calories": 240,
+    "servings": 1
+  },
+  {
+    "id": 10,
+    "name": "Chicken Burger",
+    "veg": false,
+    "category": "Fast Food",
+    "image": "https://picsum.photos/seed/burger/300/200",
+    "calories": 480,
+    "servings": 1
+  },
+  {
+    "id": 11,
+    "name": "Dal Tadka",
+    "veg": true,
+    "category": "Indian",
+    "image": "https://picsum.photos/seed/dal/300/200",
+    "calories": 260,
+    "servings": 2
+  },
+  {
+    "id": 12,
+    "name": "Prawn Fry",
+    "veg": false,
+    "category": "Seafood",
+    "image": "https://picsum.photos/seed/prawn/300/200",
+    "calories": 340,
+    "servings": 2
+  },
+  {
+    "id": 13,
+    "name": "Veg Pizza",
+    "veg": true,
+    "category": "Italian",
+    "image": "https://picsum.photos/seed/pizza/300/200",
+    "calories": 410,
+    "servings": 2
+  },
+  {
+    "id": 14,
+    "name": "Chicken Shawarma",
+    "veg": false,
+    "category": "Middle Eastern",
+    "image": "https://picsum.photos/seed/shawarma/300/200",
+    "calories": 390,
+    "servings": 1
+  },
+  {
+    "id": 15,
+    "name": "Fruit Bowl",
+    "veg": true,
+    "category": "Healthy",
+    "image": "https://picsum.photos/seed/fruits/300/200",
+    "calories": 120,
+    "servings": 1
+  },
+  {
+    "id": 16,
+    "name": "Mutton Biryani",
+    "veg": false,
+    "category": "Indian",
+    "image": "https://picsum.photos/seed/mutton/300/200",
+    "calories": 560,
+    "servings": 3
+  },
+  {
+    "id": 17,
+    "name": "Veg Momos",
+    "veg": true,
+    "category": "Asian",
+    "image": "https://picsum.photos/seed/momos/300/200",
+    "calories": 200,
+    "servings": 1
+  },
+  {
+    "id": 18,
+    "name": "Chicken Fried Rice",
+    "veg": false,
+    "category": "Asian",
+    "image": "https://picsum.photos/seed/friedrice/300/200",
+    "calories": 430,
+    "servings": 2
+  },
+  {
+    "id": 19,
+    "name": "Veg Soup",
+    "veg": true,
+    "category": "Healthy",
+    "image": "https://picsum.photos/seed/soup/300/200",
+    "calories": 110,
+    "servings": 1
+  },
+  {
+    "id": 20,
+    "name": "BBQ Chicken Wings",
+    "veg": false,
+    "category": "Western",
+    "image": "https://picsum.photos/seed/wings/300/200",
+    "calories": 500,
+    "servings": 2
+  }
+]
