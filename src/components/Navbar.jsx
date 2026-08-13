@@ -6,9 +6,12 @@ function Navbar() {
   <div className="home-container">
     <header className = "navbar">
         <img src={logo} alt="Flavour Cloud logo" className = "logo"/>
-        <h1>
-            Welcome to FlavourCloud !
-        </h1>
+         <ul className="nav-links">
+        <li>Home</li>
+        <li>About Us</li>
+        <li>Contact</li>
+        <li>Recipe List</li>
+      </ul>
     </header>
   </div>
   )
