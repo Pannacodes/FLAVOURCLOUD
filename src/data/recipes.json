@@ -4,7 +4,7 @@
     "name": "Paneer Butter Masala",
     "veg": true,
     "category": "Indian",
-    "image": "https://imgs.search.brave.com/ZPnNXr3-b-KjWW_gQUm19-HEQTi6fKDqoQSl34lRsiE/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5pc3RvY2twaG90/by5jb20vaWQvMTY2/NTMwMTYwMS9waG90/by9wYW5lZXItYnV0/dGVyLW1hc2FsYS1p/bi1hLWJvd2wtd2l0/aC1zcGljZXMtZGly/ZWN0bHktYWJvdmUt/cGhvdG8uanBnP3M9/NjEyeDYxMiZ3PTAm/az0yMCZjPU1uc25f/Qy1xNWxfbldvTWZU/S0pOSXFlbHZlZHVp/cy1MejB3ZnJtbmRm/RDQ9",
+    "image": "https://img.freepik.com/free-photo/indian-paneer-butter-masala_466689-737.jpg",
     "calories": 320,
     "servings": 2
   },
@@ -13,7 +13,7 @@
     "name": "Chicken Curry",
     "veg": false,
     "category": "Indian",
-    "image": "https://imgs.search.brave.com/-FVYPFgBOJFptKB_bUK8y2tXwwJkub66sUpWMo_njac/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWcu/bWFnbmlmaWMuY29t/L2ZyZWUtcGhvdG8v/Y3Vycnktd2l0aC1j/aGlja2VuLW9uaW9u/cy1pbmRpYW4tZm9v/ZC1hc2lhbi1jdWlz/aW5lLXRvcC12aWV3/XzI4MjktNjI0MC5q/cGc_c2VtdD1haXNf/dGVzdF9iJnc9NzQw/JnE9ODA",
+    "image": "https://img.freepik.com/free-photo/chicken-curry-with-rice_1417-1825.jpg",
     "calories": 450,
     "servings": 3
   },
@@ -22,7 +22,7 @@
     "name": "Veg Biryani",
     "veg": true,
     "category": "Indian",
-    "image": "https://imgs.search.brave.com/CBWXeG_PwNjm0pWFCpr2oWMufWa53Yjvvq3Mx9pv5GU/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5pc3RvY2twaG90/by5jb20vaWQvMTM2/MzMwNjg2My9waG90/by92ZWctYmlyeWFu/aS1vbi1ibGFjay1i/YWNrZ3JvdW5kLmpw/Zz9zPTYxMng2MTIm/dz0wJms9MjAmYz1f/RnZuVWdEZ2hvUXdM/MXdUTEFERUdoaTlw/TVgtSFpWTFRMMmtN/T2FzQ0FBPQ",
+    "image": "https://img.freepik.com/free-photo/vegetable-biryani-served-bowl_466689-7375.jpg",
     "calories": 380,
     "servings": 2
   },
@@ -31,7 +31,7 @@
     "name": "Egg Omelette",
     "veg": false,
     "category": "Breakfast",
-    "image": "https://imgs.search.brave.com/wPaD6af5dcoYHKgvu199GLX7IaiOVfoAAWffqzlfkZk/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly91cy4x/MjNyZi5jb20vNDUw/d20vY2FybG9zcm9q/YXMyMC9jYXJsb3Ny/b2phczIwMjAxMi9j/YXJsb3Nyb2phczIw/MjAxMjA0MzMyLzE2/MDU3NjM0MC1mcmVu/Y2gtZWdnLW9tZWxl/dHRlLXdpdGgtdG9t/YXRvLWFuZC1zcGlu/YWNoLW9uLXR1cnF1/b2lzZS1iYWNrZ3Jv/dW5kLmpwZz92ZXI9/Ng",
+    "image": "https://img.freepik.com/free-photo/fresh-omelette-with-tomatoes-herbs_2829-18849.jpg",
     "calories": 210,
     "servings": 1
   },
@@ -40,7 +40,7 @@
     "name": "Greek Salad",
     "veg": true,
     "category": "Healthy",
-    "image": "https://imgs.search.brave.com/9gu_6mccaRaD4RFNfeVrvoX_inc0XFUX_NzEMBFGjDo/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5pc3RvY2twaG90/by5jb20vaWQvMTE1/OTEyOTc4NC9waG90/by9ncmVlay1zYWxh/ZC1hLXBsYXRlLW9m/LWZyZXNoLXNhbGFk/LW9mLWZldGEtY2hl/ZXNlLWNoZXJyeS10/b21hdG9lcy1jdWN1/bWJlcnMtb25pb25z/LWFuZC1vbGl2ZXMu/anBnP3M9NjEyeDYx/MiZ3PTAmaz0yMCZj/PUlhcTlad3daQXZM/a3RoV2pjNExrMDlQ/UXNTUjZud3NjZkxX/bndiZm5uSWM9",
+    "image": "https://img.freepik.com/free-photo/greek-salad-with-feta-cheese-olives_2829-18844.jpg",
     "calories": 150,
     "servings": 1
   },
@@ -49,7 +49,7 @@
     "name": "Grilled Fish",
     "veg": false,
     "category": "Seafood",
-    "image": "https://imgs.search.brave.com/2LS51Y0axnAuVIEV2s-d_i8wGOZxmg0gaQJLA5GgDqU/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9zdGF0/aWMudmVjdGVlenku/Y29tL3N5c3RlbS9y/ZXNvdXJjZXMvdGh1/bWJuYWlscy8wNzAv/MTExLzUyNy9zbWFs/bC90d28tZ3JpbGxl/ZC1maXNoLXNlYXNv/bmVkLXdpdGgtZGls/bC1hbmQtbWludC1y/ZXN0aW5nLW9uLWEt/Z3JpbGwtb24tYS1w/bGF0ZS1vbi1zYW5k/LWRlY29yYXRlZC13/aXRoLXBhbG0tbGVh/dmVzLXBob3RvLmpw/Zw",
+    "image": "https://img.freepik.com/free-photo/grilled-salmon-steak-vegetables_2829-18845.jpg",
     "calories": 290,
     "servings": 2
   },
@@ -58,7 +58,7 @@
     "name": "Veg Pasta",
     "veg": true,
     "category": "Italian",
-    "image": "https://picsum.photos/seed/pasta/300/200",
+    "image": "https://img.freepik.com/free-photo/pasta-penne-tomato-sauce-with-parmesan-cheese_2829-18846.jpg",
     "calories": 330,
     "servings": 2
   },
@@ -67,7 +67,7 @@
     "name": "Beef Steak",
     "veg": false,
     "category": "Western",
-    "image": "https://picsum.photos/seed/steak/300/200",
+    "image": "https://img.freepik.com/free-photo/grilled-beef-steak-vegetables_2829-18847.jpg",
     "calories": 520,
     "servings": 1
   },
@@ -76,7 +76,7 @@
     "name": "Veg Sandwich",
     "veg": true,
     "category": "Breakfast",
-    "image": "https://picsum.photos/seed/sandwich/300/200",
+    "image": "https://img.freepik.com/free-photo/healthy-vegetarian-sandwich_2829-18848.jpg",
     "calories": 240,
     "servings": 1
   },
@@ -85,7 +85,7 @@
     "name": "Chicken Burger",
     "veg": false,
     "category": "Fast Food",
-    "image": "https://picsum.photos/seed/burger/300/200",
+    "image": "https://img.freepik.com/free-photo/delicious-chicken-burger_2829-18850.jpg",
     "calories": 480,
     "servings": 1
   },
@@ -94,7 +94,7 @@
     "name": "Dal Tadka",
     "veg": true,
     "category": "Indian",
-    "image": "https://picsum.photos/seed/dal/300/200",
+    "image": "https://img.freepik.com/free-photo/indian-dal-tadka-served-bowl_466689-738.jpg",
     "calories": 260,
     "servings": 2
   },
@@ -103,7 +103,7 @@
     "name": "Prawn Fry",
     "veg": false,
     "category": "Seafood",
-    "image": "https://picsum.photos/seed/prawn/300/200",
+    "image": "https://img.freepik.com/free-photo/spicy-fried-prawns_2829-18851.jpg",
     "calories": 340,
     "servings": 2
   },
@@ -112,7 +112,7 @@
     "name": "Veg Pizza",
     "veg": true,
     "category": "Italian",
-    "image": "https://picsum.photos/seed/pizza/300/200",
+    "image": "https://img.freepik.com/free-photo/vegetarian-pizza-with-tomatoes-olives_2829-18852.jpg",
     "calories": 410,
     "servings": 2
   },
@@ -121,7 +121,7 @@
     "name": "Chicken Shawarma",
     "veg": false,
     "category": "Middle Eastern",
-    "image": "https://picsum.photos/seed/shawarma/300/200",
+    "image": "https://img.freepik.com/free-photo/chicken-shawarma-wrap_2829-18853.jpg",
     "calories": 390,
     "servings": 1
   },
@@ -130,7 +130,7 @@
     "name": "Fruit Bowl",
     "veg": true,
     "category": "Healthy",
-    "image": "https://picsum.photos/seed/fruits/300/200",
+    "image": "https://img.freepik.com/free-photo/fresh-fruit-salad-bowl_2829-18854.jpg",
     "calories": 120,
     "servings": 1
   },
@@ -139,7 +139,7 @@
     "name": "Mutton Biryani",
     "veg": false,
     "category": "Indian",
-    "image": "https://picsum.photos/seed/mutton/300/200",
+    "image": "https://img.freepik.com/free-photo/mutton-biryani-served-bowl_466689-739.jpg",
     "calories": 560,
     "servings": 3
   },
@@ -148,7 +148,7 @@
     "name": "Veg Momos",
     "veg": true,
     "category": "Asian",
-    "image": "https://picsum.photos/seed/momos/300/200",
+    "image": "https://img.freepik.com/free-photo/steamed-vegetable-dumplings_2829-18855.jpg",
     "calories": 200,
     "servings": 1
   },
@@ -157,7 +157,7 @@
     "name": "Chicken Fried Rice",
     "veg": false,
     "category": "Asian",
-    "image": "https://picsum.photos/seed/friedrice/300/200",
+    "image": "https://img.freepik.com/free-photo/chicken-fried-rice-bowl_2829-18856.jpg",
     "calories": 430,
     "servings": 2
   },
@@ -166,7 +166,7 @@
     "name": "Veg Soup",
     "veg": true,
     "category": "Healthy",
-    "image": "https://picsum.photos/seed/soup/300/200",
+    "image": "https://img.freepik.com/free-photo/vegetable-soup-bowl_2829-18857.jpg",
     "calories": 110,
     "servings": 1
   },
@@ -175,7 +175,7 @@
     "name": "BBQ Chicken Wings",
     "veg": false,
     "category": "Western",
-    "image": "https://picsum.photos/seed/wings/300/200",
+    "image": "https://img.freepik.com/free-photo/bbq-chicken-wings_2829-18858.jpg",
     "calories": 500,
     "servings": 2
   }

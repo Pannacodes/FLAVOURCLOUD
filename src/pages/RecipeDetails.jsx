@@ -14,7 +14,6 @@ const ItemDetails = () => {
       <img src={recipe.image} alt={recipe.name} className="recipe-img" />
 
       <p><strong>Category:</strong> {recipe.category}</p>
-      <p><strong>Type:</strong> {recipe.type}</p>
       <p><strong>Calories:</strong> {recipe.calories}</p>
       <p><strong>Servings:</strong> {recipe.servings}</p>
 
