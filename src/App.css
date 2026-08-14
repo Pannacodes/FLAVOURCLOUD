@@ -470,3 +470,40 @@ ABOUT PAGE
     text-align: center;
   }
 }
+
+.edit-btn {
+  background: #ffc107;            /* Warm amber edit color */
+  color: #333;
+  padding: 0.6rem 1.2rem;
+  border: none;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  cursor: pointer;
+
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+
+  transition: background 0.25s ease, transform 0.2s ease;
+  margin-top: 0.5rem;
+}
+
+/* Hover effect */
+.edit-btn:hover {
+  background: #e0a800;
+  transform: translateY(-3px);
+}
+
+/* Active click effect */
+.edit-btn:active {
+  transform: translateY(-1px);
+}
+
+/* Mobile responsiveness */
+@media (max-width: 600px) {
+  .edit-btn {
+    width: 100%;
+    justify-content: center;
+  }
+}

@@ -32,8 +32,7 @@ const handleEdit = () => {
       
       <button
         className="edit-btn"
-        onClick={handleEdit}
-      >
+        onClick={handleEdit}>
         Edit
       </button>
 
