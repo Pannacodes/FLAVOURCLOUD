@@ -1,14 +1,19 @@
-import { useParams } from "react-router-dom";
-import recipes from "../data/recipes.json";
+import { useParams, useNavigate } from "react-router-dom";
 
-const ItemDetails = () => {
+
+const ItemDetails = ({recipes}) => {
+
   const { id } = useParams();
+  const navigate = useNavigate();
   const recipe = recipes.find((r) => r.id === Number(id));
 
   if (!recipe) return <h2>Recipe not found</h2>;
 
   return (
-    <div className="item-details">
+    <div className="item-details" >
+      <button className="back-to-recipe-btn" onClick={() => navigate("/recipes")}>
+      ← Back to Recipes
+    </button>
       <h1>{recipe.name}</h1>
 
       <img src={recipe.image} alt={recipe.name} className="recipe-img" />
@@ -18,6 +23,7 @@ const ItemDetails = () => {
       <p><strong>Servings:</strong> {recipe.servings}</p>
 
       {recipe.description && <p>{recipe.description}</p>}
+
 
       {recipe.ingredients && (
         <>

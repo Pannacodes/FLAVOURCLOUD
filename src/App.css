@@ -19,6 +19,14 @@
   border-radius: 10px;
   border: 1px solid #eee;
 }
+.recipe-img{
+  
+    width: 200px;
+    height: 120px;
+    object-fit: cover;
+  }
+
+
 
 .status {
   font-size: 18px;
@@ -130,5 +138,335 @@ ABOUT PAGE
   .team-member a {
     display: block;
     margin-bottom: 8px;
+  }
+}
+
+/* ============================
+   ADD RECIPE FORM CONTAINER
+   ============================ */
+.add-recipe-form {
+  background: #ffffff;
+  padding: 2rem;
+  border-radius: 12px;
+  max-width: 600px;
+  margin: 2rem auto;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+/* Title */
+.add-recipe-form h2 {
+  text-align: center;
+  margin-bottom: 1rem;
+  font-size: 1.8rem;
+  color: #333;
+  font-weight: 700;
+}
+
+/* ============================
+   LABELS
+   ============================ */
+.add-recipe-form label {
+  display: flex;
+  flex-direction: column;
+  font-weight: 600;
+  color: #444;
+  font-size: 0.95rem;
+}
+
+/* ============================
+   INPUTS & SELECTS
+   ============================ */
+.add-recipe-form input,
+.add-recipe-form select {
+  margin-top: 0.4rem;
+  padding: 0.7rem 0.9rem;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+  transition: all 0.2s ease;
+}
+
+.add-recipe-form input:focus,
+.add-recipe-form select:focus {
+  border-color: #007bff;
+  outline: none;
+  box-shadow: 0 0 4px rgba(0, 123, 255, 0.4);
+}
+
+/* ============================
+   SUBMIT BUTTON
+   ============================ */
+.add-recipe-form button {
+  background: #007bff;
+  color: white;
+  padding: 0.9rem;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s ease;
+  margin-top: 1rem;
+}
+
+.add-recipe-form button:hover {
+  background: #005fcc;
+}
+
+/* ============================
+   RESPONSIVE DESIGN
+   ============================ */
+@media (max-width: 600px) {
+  .add-recipe-form {
+    padding: 1.5rem;
+    margin: 1rem;
+  }
+
+  .add-recipe-form h2 {
+    font-size: 1.5rem;
+  }
+}
+.toggle-form-btn {
+  background: #28a745;            /* Green toggle button */
+  color: #fff;
+  padding: 0.7rem 1.3rem;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  transition: background 0.25s ease, transform 0.2s ease;
+  margin-bottom: 1.5rem;
+}
+
+/* Hover effect */
+.toggle-form-btn:hover {
+  background: #1e7e34;
+  transform: translateY(-3px);
+}
+
+/* Active click effect */
+.toggle-form-btn:active {
+  transform: translateY(-1px);
+}
+
+/* When form is visible (optional styling) */
+.toggle-form-btn.active {
+  background: #dc3545;            /* Red when hiding */
+}
+
+/* Mobile responsiveness */
+@media (max-width: 600px) {
+  .toggle-form-btn {
+    width: 100%;
+    justify-content: center;
+  }
+}
+/* ============================
+   UPDATE RECIPE FORM CONTAINER
+   ============================ */
+.update-recipe-form {
+  background: #ffffff;
+  padding: 2rem;
+  border-radius: 12px;
+  max-width: 650px;
+  margin: 2rem auto;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  display: flex;
+  flex-direction: column;
+  gap: 1.3rem;
+}
+
+/* Title */
+.update-recipe-form h1 {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 0.5rem;
+}
+
+/* ============================
+   LABELS
+   ============================ */
+.update-recipe-form label {
+  display: flex;
+  flex-direction: column;
+  font-weight: 600;
+  color: #444;
+  font-size: 0.95rem;
+}
+
+/* ============================
+   INPUTS & SELECTS
+   ============================ */
+.update-recipe-form input,
+.update-recipe-form select {
+  margin-top: 0.4rem;
+  padding: 0.75rem 1rem;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+  transition: all 0.2s ease;
+}
+
+.update-recipe-form input:focus,
+.update-recipe-form select:focus {
+  border-color: #007bff;
+  outline: none;
+  box-shadow: 0 0 4px rgba(0, 123, 255, 0.4);
+}
+
+/* ============================
+   SUBMIT BUTTON
+   ============================ */
+.update-recipe-form button {
+  background: #007bff;
+  color: white;
+  padding: 0.9rem;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.25s ease, transform 0.2s ease;
+  margin-top: 1rem;
+}
+
+.update-recipe-form button:hover {
+  background: #005fcc;
+  transform: translateY(-3px);
+}
+
+.update-recipe-form button:active {
+  transform: translateY(-1px);
+}
+
+/* ============================
+   RESPONSIVE DESIGN
+   ============================ */
+@media (max-width: 600px) {
+  .update-recipe-form {
+    padding: 1.5rem;
+    margin: 1rem;
+  }
+
+  .update-recipe-form h1 {
+    font-size: 1.6rem;
+  }
+}
+.back-to-recipe-btn {
+  background: #767fe3;          /* Primary theme blue */
+  color: #fff;
+  padding: 0.7rem 1.3rem;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+
+  transition: background 0.25s ease, transform 0.2s ease;
+  margin-bottom: 1.5rem;
+}
+
+/* Hover animation */
+.back-to-recipe-btn:hover {
+  background: #017320;
+  transform: translateX(-4px);
+}
+
+/* Active click animation */
+.back-to-recipe-btn:active {
+  transform: translateX(-2px);
+}
+
+/* Mobile responsiveness */
+@media (max-width: 600px) {
+  .back-to-recipe-btn {
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+/* ============================
+   SIDEBAR CONTAINER
+   ============================ */
+.sidebar {
+  width: 240px;
+  background: #f8f9fa;                 /* Light theme background */
+  padding: 1.5rem;
+  border-right: 2px solid #e2e2e2;     /* Soft divider */
+  min-height: 100vh;                   /* Full height */
+  box-shadow: 2px 0 8px rgba(0,0,0,0.05);
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+/* ============================
+   SIDEBAR TITLE
+   ============================ */
+.sidebar-title {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #333;
+  text-align: center;
+  margin-bottom: 0.5rem;
+}
+
+/* ============================
+   SIDEBAR LIST
+   ============================ */
+.sidebar-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.sidebar-list li {
+  padding: 0.7rem 1rem;
+  background: #ffffff;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #444;
+  cursor: pointer;
+  transition: background 0.25s ease, transform 0.2s ease;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.06);
+}
+
+/* Hover effect */
+.sidebar-list li:hover {
+  background: #01600e;
+  color: #720101;
+  transform: translateX(4px);
+}
+
+/* ============================
+   RESPONSIVE SIDEBAR
+   ============================ */
+@media (max-width: 768px) {
+  .sidebar {
+    width: 100%;
+    min-height: auto;
+    border-right: none;
+    border-bottom: 2px solid #e2e2e2;
+  }
+
+  .sidebar-list li {
+    text-align: center;
   }
 }

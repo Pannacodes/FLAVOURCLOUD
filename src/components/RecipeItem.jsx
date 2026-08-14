@@ -1,8 +1,14 @@
 // RecipeItem.jsx
-import React from "react";
+
+import { useNavigate } from "react-router-dom";
 
 const RecipeItem = ({ recipe, onDelete }) => {
-  
+  const navigate = useNavigate();
+
+const handleEdit = () => {
+    navigate(`/recipes/${recipe.id}/edit`);
+  };
+
 
   return (
     <li className="recipe-item">
@@ -15,13 +21,25 @@ const RecipeItem = ({ recipe, onDelete }) => {
       <span className="status">
        {recipe.veg ? "🌱 Vegetarian" : "🥩 Contains meat"}
       </span>
+      
 
       {/* Delete Button */}
       <button className="delete-btn" onClick={() => onDelete(recipe.id)}>
         Delete
       </button>
+
+      {/* Edit Button */}
+      
+      <button
+        className="edit-btn"
+        onClick={handleEdit}
+      >
+        Edit
+      </button>
+
     </li>
   );
 };
+
 
 export default RecipeItem;
