@@ -146,21 +146,21 @@ ABOUT PAGE
    ============================ */
 .add-recipe-form {
   background: #ffffff;
-  padding: 2rem;
+  padding: 1rem;
   border-radius: 12px;
   max-width: 600px;
-  margin: 2rem auto;
+  margin: 1rem auto;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
   display: flex;
   flex-direction: column;
-  gap: 1.2rem;
+  gap: 1.1rem;
 }
 
 /* Title */
 .add-recipe-form h2 {
   text-align: center;
   margin-bottom: 1rem;
-  font-size: 1.8rem;
+  font-size: 1.5rem;
   color: #333;
   font-weight: 700;
 }
@@ -173,7 +173,7 @@ ABOUT PAGE
   flex-direction: column;
   font-weight: 600;
   color: #444;
-  font-size: 0.95rem;
+  font-size: 0.90rem;
 }
 
 /* ============================

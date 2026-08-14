@@ -14,6 +14,7 @@ import RecipeDetails from "./pages/RecipeDetails.jsx";
 import PageNotFound from "./pages/PageNotFound.jsx";
 import AllRecipes from "./pages/AllRecipes.jsx";
 import UpdateRecipeForm from "./components/UpdateRecipeForm.jsx";
+import AddRecipeForm from "./components/RecipeForm.jsx";
 
 
 import { Route, Routes } from "react-router-dom";
@@ -83,6 +84,9 @@ function App() {
                 />
               }
             />
+            
+            {/**add recipe form from side bar */}
+             <Route path="/recipes/add" element={<AddRecipeForm />} />
 
             {/* Page Not Found */}
             <Route
