@@ -7,6 +7,10 @@ const ItemDetails = ({ recipes }) => {
 
   const recipe = recipes.find((recipe) => recipe.id === Number(id));
 
+  const handleEdit = () => {
+    navigate(`/recipes/${recipe.id}/edit`);
+  };
+
   if (!recipe) {
     return <h2>Recipe not found</h2>;
   }
@@ -60,6 +64,11 @@ const ItemDetails = ({ recipes }) => {
           <li key={index}>{step}</li>
         ))}
       </ol>
+      <div className="recipe-actions">
+        <button className="edit-btn" onClick={handleEdit}>
+          Edit
+        </button>
+      </div>
     </div>
   );
 };

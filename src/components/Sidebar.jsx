@@ -9,7 +9,7 @@ export default function Sidebar() {
       <h3 className="sidebar-title">Deploy Deliciousness</h3>
 
       <ul className="sidebar-list">
-        <li onClick={() => navigate("/recipes/add")}>Add Recipes</li>
+        <li onClick={() => navigate("/recipes/add")}>Add Recipes ✚</li>
         <li onClick={() => navigate("/categories")}>Categories</li>
         <li onClick={() => navigate("/favorites")}>Favorites ❤️</li>
         <li onClick={() => navigate("/recipes?veg=all")}>Veg 🌱/ Non-Veg 🥩</li>
