@@ -17,11 +17,11 @@ export default function Sidebar() {
           </li>
 
           <li onClick={() => navigate("/Favorites")}>
-          Favorites
+          Favorites ❤️ 
           </li>
 
           <li onClick={() => navigate("/Veg-nonveg")}>
-          Veg / Non-Veg
+          Veg 🌱 / Non-Veg 🥩
           </li>
       </ul>
     </aside>
