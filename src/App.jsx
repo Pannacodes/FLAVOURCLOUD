@@ -15,6 +15,7 @@ import AllRecipes from "./pages/AllRecipes.jsx";
 import UpdateRecipeForm from "./components/UpdateRecipeForm.jsx";
 import AddRecipeForm from "./components/RecipeForm.jsx";
 import Categories from "./pages/Categories.jsx";
+import Favorites from "./pages/Favorites.jsx";
 import { FavoritesProvider } from "./components/FavoriteContext.jsx";
 
 import { Route, Routes } from "react-router-dom";
@@ -52,7 +53,10 @@ function App() {
             {/* About */}
             <Route path="/about" element={<AboutUs />} />
 
-            <Route path="/categories" element={<Categories />} />
+            <Route
+              path="/categories"
+              element={<Categories recipes={recipes} />}
+            />
 
             {/* All Recipes */}
             <Route path="/recipes" element={<AllRecipes recipes={recipes} />} />
@@ -72,7 +76,12 @@ function App() {
             />
 
             {/**add recipe form from side bar */}
-            <Route path="/recipes/add" element={<AddRecipeForm />} />
+            <Route
+              path="/recipes/add"
+              element={<AddRecipeForm recipes={recipes} setRecipes={setRecipes} />}
+            />
+
+            <Route path="/favorites" element={<Favorites />} />
 
             {/* Page Not Found */}
             <Route path="*" element={<PageNotFound />} />

@@ -1,35 +1,78 @@
 import { useState } from "react";
 
-const AddRecipeForm = ({ recipes, setRecipes }) => {
+const AddRecipeForm = ({ setRecipes }) => {
   const [name, setName] = useState("");
+
   const [veg, setVeg] = useState(false);
+
   const [category, setCategory] = useState("");
+
   const [image, setImage] = useState("");
+
   const [calories, setCalories] = useState("");
+
   const [servings, setServings] = useState("");
+
+  const [ingredients, setIngredients] = useState("");
+
+  const [steps, setSteps] = useState("");
 
   const handleSubmit = (event) => {
     event.preventDefault();
 
     const newRecipe = {
       id: Date.now(),
+
       name: name,
+
       veg: veg,
-      category: category,
+
+      category: category.trim(),
+
       image: image,
+
       calories: Number(calories),
+
       servings: Number(servings),
+
+      // Convert text into arrays
+
+      ingredients: ingredients
+
+        .split(",")
+
+        .map((ingredient) => ingredient.trim())
+
+        .filter((ingredient) => ingredient !== ""),
+
+      steps: steps
+
+        .split(",")
+
+        .map((step) => step.trim())
+
+        .filter((step) => step !== ""),
     };
 
-    setRecipes([...recipes, newRecipe]);
+    setRecipes((currentRecipes) => [...currentRecipes, newRecipe]);
 
     // Reset form
+
     setName("");
+
     setVeg(false);
+
     setCategory("");
+
     setImage("");
+
     setCalories("");
+
     setServings("");
+
+    setIngredients("");
+
+    setSteps("");
   };
 
   return (
@@ -37,6 +80,7 @@ const AddRecipeForm = ({ recipes, setRecipes }) => {
       <h2>Add a Recipe</h2>
 
       {/* Name */}
+
       <label>
         Recipe name:
         <input
@@ -48,6 +92,7 @@ const AddRecipeForm = ({ recipes, setRecipes }) => {
       </label>
 
       {/* Vegetarian */}
+
       <label>
         Vegetarian:
         <select
@@ -55,11 +100,13 @@ const AddRecipeForm = ({ recipes, setRecipes }) => {
           onChange={(event) => setVeg(event.target.value === "true")}
         >
           <option value="true">Yes</option>
+
           <option value="false">No</option>
         </select>
       </label>
 
       {/* Category */}
+
       <label>
         Category:
         <input
@@ -71,6 +118,7 @@ const AddRecipeForm = ({ recipes, setRecipes }) => {
       </label>
 
       {/* Image */}
+
       <label>
         Image URL:
         <input
@@ -83,6 +131,7 @@ const AddRecipeForm = ({ recipes, setRecipes }) => {
       </label>
 
       {/* Calories */}
+
       <label>
         Calories:
         <input
@@ -95,6 +144,7 @@ const AddRecipeForm = ({ recipes, setRecipes }) => {
       </label>
 
       {/* Servings */}
+
       <label>
         Servings:
         <input
@@ -106,9 +156,31 @@ const AddRecipeForm = ({ recipes, setRecipes }) => {
         />
       </label>
 
-      <button type="submit">
-        Add Recipe
-      </button>
+      {/* Ingredients */}
+
+      <label>
+        Ingredients:
+        <textarea
+          value={ingredients}
+          onChange={(event) => setIngredients(event.target.value)}
+          placeholder="Paneer, Butter, Tomatoes, Cream, Spices"
+          required
+        />
+      </label>
+
+      {/* Steps */}
+
+      <label>
+        Steps:
+        <textarea
+          value={steps}
+          onChange={(event) => setSteps(event.target.value)}
+          placeholder="Sauté spices, Add tomato puree, Cook paneer, Add cream, Simmer"
+          required
+        />
+      </label>
+
+      <button type="submit">Add Recipe</button>
     </form>
   );
 };

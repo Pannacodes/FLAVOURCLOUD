@@ -1,16 +1,16 @@
 import { useContext } from "react";
-import { FavoritesContext } from "../FavoritesContext";
+import { FavoritesContext } from "../components/FavoritesContext";
 
 const Favorites = () => {
   const { favorites } = useContext(FavoritesContext);
 
   return (
-    <div>
+    <div className="favorites-page">
       <h2>Your Favorite Recipes</h2>
 
       {favorites.length === 0 && <p>No favorites added yet.</p>}
 
-      <div className="recipe-list">
+      <div className="favorites-grid">
         {favorites.map((recipe) => (
           <div key={recipe.id} className="recipe-card">
             <img src={recipe.image} alt={recipe.name} />

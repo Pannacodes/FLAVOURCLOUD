@@ -16,29 +16,20 @@ const RecipeItem = ({ recipe, onDelete, toggleFavorite, isFav }) => {
         <p>Category: {recipe.category}</p>
       </div>
 
-      {/* Conditional Rendering */}
-      <span className="status">
-       {recipe.veg ? "🌱 Vegetarian" : "🥩 Contains meat"}
-      </span>
-      
-
-      {/* Delete Button */}
-      <button className="delete-btn" onClick={() => onDelete(recipe.id)}>
-        Delete
-      </button>
-
-      {/* Edit Button */}
-      
-      <button
-        className="edit-btn"
-        onClick={handleEdit}>
-        Edit
-      </button>
-
-       {/* Favorite button */}
-       <button onClick={() => toggleFavorite(recipe)}>
-        {isFav ? "❤️ Remove Favorite" : "🤍 Add to Favorites"}
-      </button>
+      <div className="recipe-actions">
+        <span className="status">
+          {recipe.veg ? "🌱 Vegetarian" : "🥩 Contains meat"}
+        </span>
+        <button className="delete-btn" onClick={() => onDelete(recipe.id)}>
+          Delete
+        </button>
+        <button className="edit-btn" onClick={handleEdit}>
+          Edit
+        </button>
+        <button onClick={() => toggleFavorite(recipe)}>
+          {isFav ? "❤️ Remove Favorite" : "🤍 Add to Favorites"}
+        </button>
+      </div>
 
     </li>
   );

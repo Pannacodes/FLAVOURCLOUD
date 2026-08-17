@@ -1,48 +1,54 @@
-import { useState } from "react";
-
 import { Link, useSearchParams } from "react-router-dom";
-
-import recipes from "../data/recipes.json";
-
 import "./AllRecipes.css";
 
-const AllRecipes = () => {
+const AllRecipes = ({ recipes }) => {
   const [searchParams, setSearchParams] = useSearchParams();
 
-  // Get the category from the URL
-  const categoryFromURL = searchParams.get("category") || "";
+  const selectedCategory = searchParams.get("category") || "";
+  const selectedVeg = searchParams.get("veg") || "";
 
-  // Extract unique categories
   const categories = [...new Set(recipes.map((recipe) => recipe.category))];
 
-  // Filter recipes based on the URL category
-  const filteredRecipes = categoryFromURL
-    ? recipes.filter((recipe) => recipe.category === categoryFromURL)
-    : recipes;
+  const filteredRecipes = recipes.filter((recipe) => {
+    const matchesCategory = !selectedCategory || recipe.category === selectedCategory;
+    const matchesVeg =
+      !selectedVeg ||
+      selectedVeg === "all" ||
+      recipe.veg === (selectedVeg === "true");
 
-  // When dropdown changes
-  const handleCategoryChange = (event) => {
-    const category = event.target.value;
+    return matchesCategory && matchesVeg;
+  });
 
-    if (category) {
-      setSearchParams({ category: category });
-    } else {
-      // If "All" is selected, remove the category from the URL
+  const updateFilters = (filters) => {
+    const nextFilters = {
+      category: selectedCategory,
+      veg: selectedVeg,
+      ...filters,
+    };
 
-      setSearchParams({});
-    }
+    Object.keys(nextFilters).forEach((key) => {
+      if (!nextFilters[key] || nextFilters[key] === "all") {
+        delete nextFilters[key];
+      }
+    });
+
+    setSearchParams(nextFilters);
   };
 
   return (
     <div className="all-recipes">
-      <h1>{categoryFromURL ? `${categoryFromURL} Recipes` : "All Recipes"}</h1>
+      <h1>All Recipes</h1>
 
       {/* Category Filter */}
-
       <div className="category-filter">
         <label>Select Category: </label>
 
-        <select value={categoryFromURL} onChange={handleCategoryChange}>
+        <select
+          value={selectedCategory}
+          onChange={(event) => {
+            updateFilters({ category: event.target.value });
+          }}
+        >
           <option value="">All</option>
 
           {categories.map((category) => (
@@ -53,8 +59,21 @@ const AllRecipes = () => {
         </select>
       </div>
 
-      {/* Recipe Titles */}
+      <div className="category-filter">
+        <label htmlFor="veg-filter">Diet: </label>
+        <select
+          id="veg-filter"
+          value={selectedVeg}
+          onChange={(event) => updateFilters({ veg: event.target.value })}
+        >
+          <option value="">All</option>
+          <option value="all">Vegetarian & non-vegetarian</option>
+          <option value="true">Vegetarian</option>
+          <option value="false">Non-vegetarian</option>
+        </select>
+      </div>
 
+      {/* Recipe Titles */}
       <ul className="recipe-titles">
         {filteredRecipes.map((recipe) => (
           <li key={recipe.id}>
@@ -62,10 +81,6 @@ const AllRecipes = () => {
           </li>
         ))}
       </ul>
-
-      {filteredRecipes.length === 0 && (
-        <p>No recipes found in this category.</p>
-      )}
     </div>
   );
 };

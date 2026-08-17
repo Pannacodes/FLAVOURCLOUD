@@ -1,27 +1,9 @@
 import { useNavigate } from "react-router-dom";
 
-const Categories = () => {
+const Categories = ({ recipes }) => {
   const navigate = useNavigate();
 
-  const categories = [
-    "Indian",
-
-    "Breakfast",
-
-    "Healthy",
-
-    "Seafood",
-
-    "Italian",
-
-    "Western",
-
-    "Fast Food",
-
-    "Middle Eastern",
-
-    "Asian",
-  ];
+  const categories = [...new Set(recipes.map((recipe) => recipe.category))];
 
   return (
     <div className="categories-page">
