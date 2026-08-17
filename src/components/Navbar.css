@@ -1,1 +1,66 @@
-.home-container{height:96px}.navbar{position:fixed;inset:0 0 auto;z-index:1000;height:96px;display:flex;align-items:center;justify-content:space-between;padding:0 34px;border-bottom:1px solid var(--line);background:rgba(255,255,255,.94);box-shadow:0 3px 16px rgba(38,61,48,.06);backdrop-filter:blur(12px)}.logo{width:270px;height:84px;object-fit:contain}.nav-links{display:flex;gap:8px;align-items:center;margin:0;padding:0;list-style:none}.nav-links a{display:block;padding:9px 14px;border-radius:999px;color:var(--ink);font-size:.95rem;font-weight:750;text-decoration:none}.nav-links a:hover{color:var(--sage-dark);background:var(--sage-pale)}@media(max-width:560px){.home-container{height:128px}.navbar{height:128px;padding:10px 14px;flex-direction:column;justify-content:center;gap:4px}.logo{width:215px;height:66px}.nav-links{gap:2px}.nav-links a{padding:6px 9px;font-size:.82rem}}
+.home-container {
+  height: 96px;
+}
+.navbar {
+  position: fixed;
+  inset: 0 0 auto;
+  z-index: 1000;
+  height: 96px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 34px;
+  border-bottom: 1px solid var(--line);
+  background: rgba(255, 255, 255, 0.94);
+  box-shadow: 0 3px 16px rgba(38, 61, 48, 0.06);
+  backdrop-filter: blur(12px);
+}
+.logo {
+  width: 270px;
+  height: 84px;
+  object-fit: contain;
+}
+.nav-links {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.nav-links a {
+  display: block;
+  padding: 9px 14px;
+  border-radius: 999px;
+  color: var(--ink);
+  font-size: 0.95rem;
+  font-weight: 750;
+  text-decoration: none;
+}
+.nav-links a:hover {
+  color: var(--sage-dark);
+  background: var(--sage-pale);
+}
+@media (max-width: 560px) {
+  .home-container {
+    height: 128px;
+  }
+  .navbar {
+    height: 128px;
+    padding: 10px 14px;
+    flex-direction: column;
+    justify-content: center;
+    gap: 4px;
+  }
+  .logo {
+    width: 215px;
+    height: 66px;
+  }
+  .nav-links {
+    gap: 2px;
+  }
+  .nav-links a {
+    padding: 6px 9px;
+    font-size: 0.82rem;
+  }
+}
