@@ -15,10 +15,6 @@ function Navbar() {
             <Link to="/about">About</Link>
           </li>
           <li>
-            <Link to="/contact">Contact</Link>
-          </li>
-
-          <li>
             <Link to="/recipes">All Recipes</Link></li>
         </ul>
       </header>

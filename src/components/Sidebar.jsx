@@ -12,7 +12,9 @@ export default function Sidebar() {
           Add Recipes
         </li>
 
-        <li>Categories</li>
+        <li onClick={() => navigate("/categories")}>
+          Categories
+          </li>
       </ul>
     </aside>
   );

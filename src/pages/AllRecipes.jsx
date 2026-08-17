@@ -1,41 +1,60 @@
 import { useState } from "react";
-import { Link } from "react-router-dom";
-import recipes from "../data/recipes.json";
-import "./AllRecipes.css"
 
+import { Link, useSearchParams } from "react-router-dom";
+
+import recipes from "../data/recipes.json";
+
+import "./AllRecipes.css";
 
 const AllRecipes = () => {
-  const [selectedCategory, setSelectedCategory] = useState("");
+  const [searchParams, setSearchParams] = useSearchParams();
+
+  // Get the category from the URL
+  const categoryFromURL = searchParams.get("category") || "";
 
   // Extract unique categories
-  const categories = [...new Set(recipes.map((r) => r.category))];
+  const categories = [...new Set(recipes.map((recipe) => recipe.category))];
 
-  // Filter recipes by category
-  const filteredRecipes = selectedCategory
-    ? recipes.filter((r) => r.category === selectedCategory)
+  // Filter recipes based on the URL category
+  const filteredRecipes = categoryFromURL
+    ? recipes.filter((recipe) => recipe.category === categoryFromURL)
     : recipes;
+
+  // When dropdown changes
+  const handleCategoryChange = (event) => {
+    const category = event.target.value;
+
+    if (category) {
+      setSearchParams({ category: category });
+    } else {
+      // If "All" is selected, remove the category from the URL
+
+      setSearchParams({});
+    }
+  };
 
   return (
     <div className="all-recipes">
-      <h1>All Recipes</h1>
+      <h1>{categoryFromURL ? `${categoryFromURL} Recipes` : "All Recipes"}</h1>
 
       {/* Category Filter */}
+
       <div className="category-filter">
         <label>Select Category: </label>
-        <select
-          value={selectedCategory}
-          onChange={(e) => setSelectedCategory(e.target.value)}
-        >
+
+        <select value={categoryFromURL} onChange={handleCategoryChange}>
           <option value="">All</option>
-          {categories.map((cat) => (
-            <option key={cat} value={cat}>
-              {cat}
+
+          {categories.map((category) => (
+            <option key={category} value={category}>
+              {category}
             </option>
           ))}
         </select>
       </div>
 
       {/* Recipe Titles */}
+
       <ul className="recipe-titles">
         {filteredRecipes.map((recipe) => (
           <li key={recipe.id}>
@@ -43,6 +62,10 @@ const AllRecipes = () => {
           </li>
         ))}
       </ul>
+
+      {filteredRecipes.length === 0 && (
+        <p>No recipes found in this category.</p>
+      )}
     </div>
   );
 };
