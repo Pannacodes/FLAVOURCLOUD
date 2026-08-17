@@ -6,7 +6,9 @@
     "category": "Indian",
     "image": "https://img.freepik.com/free-photo/indian-paneer-butter-masala_466689-737.jpg",
     "calories": 320,
-    "servings": 2
+    "servings": 2,
+    "ingredients": ["Paneer", "Butter", "Tomatoes", "Cream", "Spices"],
+    "steps": ["Sauté spices", "Add tomato puree", "Cook paneer", "Add cream", "Simmer"]
   },
   {
     "id": 2,
@@ -15,7 +17,9 @@
     "category": "Indian",
     "image": "https://img.freepik.com/free-photo/chicken-curry-with-rice_1417-1825.jpg",
     "calories": 450,
-    "servings": 3
+    "servings": 3,
+    "ingredients": ["Chicken", "Onions", "Tomatoes", "Garlic", "Spices"],
+    "steps": ["Sauté onions", "Add spices", "Add chicken", "Cook tomatoes", "Simmer"]
   },
   {
     "id": 3,
@@ -24,7 +28,9 @@
     "category": "Indian",
     "image": "https://img.freepik.com/free-photo/vegetable-biryani-served-bowl_466689-7375.jpg",
     "calories": 380,
-    "servings": 2
+    "servings": 2,
+    "ingredients": ["Rice", "Mixed vegetables", "Spices", "Yogurt"],
+    "steps": ["Cook rice", "Sauté vegetables", "Add spices", "Layer and steam"]
   },
   {
     "id": 4,
@@ -33,7 +39,9 @@
     "category": "Breakfast",
     "image": "https://img.freepik.com/free-photo/fresh-omelette-with-tomatoes-herbs_2829-18849.jpg",
     "calories": 210,
-    "servings": 1
+    "servings": 1,
+    "ingredients": ["Eggs", "Salt", "Pepper", "Oil"],
+    "steps": ["Beat eggs", "Heat pan", "Pour mixture", "Cook both sides"]
   },
   {
     "id": 5,
@@ -42,7 +50,9 @@
     "category": "Healthy",
     "image": "https://img.freepik.com/free-photo/greek-salad-with-feta-cheese-olives_2829-18844.jpg",
     "calories": 150,
-    "servings": 1
+    "servings": 1,
+    "ingredients": ["Tomatoes", "Cucumber", "Olives", "Feta", "Olive oil"],
+    "steps": ["Chop vegetables", "Add feta", "Mix dressing", "Combine"]
   },
   {
     "id": 6,
@@ -51,7 +61,9 @@
     "category": "Seafood",
     "image": "https://img.freepik.com/free-photo/grilled-salmon-steak-vegetables_2829-18845.jpg",
     "calories": 290,
-    "servings": 2
+    "servings": 2,
+    "ingredients": ["Fish fillet", "Salt", "Pepper", "Lemon"],
+    "steps": ["Season fish", "Heat grill", "Cook both sides", "Serve with lemon"]
   },
   {
     "id": 7,
@@ -60,7 +72,9 @@
     "category": "Italian",
     "image": "https://img.freepik.com/free-photo/pasta-penne-tomato-sauce-with-parmesan-cheese_2829-18846.jpg",
     "calories": 330,
-    "servings": 2
+    "servings": 2,
+    "ingredients": ["Pasta", "Tomato sauce", "Vegetables", "Cheese"],
+    "steps": ["Boil pasta", "Cook vegetables", "Add sauce", "Mix and serve"]
   },
   {
     "id": 8,
@@ -69,7 +83,9 @@
     "category": "Western",
     "image": "https://img.freepik.com/free-photo/grilled-beef-steak-vegetables_2829-18847.jpg",
     "calories": 520,
-    "servings": 1
+    "servings": 1,
+    "ingredients": ["Beef steak", "Salt", "Pepper", "Butter"],
+    "steps": ["Season steak", "Sear on high heat", "Cook to preference"]
   },
   {
     "id": 9,
@@ -78,7 +94,9 @@
     "category": "Breakfast",
     "image": "https://img.freepik.com/free-photo/healthy-vegetarian-sandwich_2829-18848.jpg",
     "calories": 240,
-    "servings": 1
+    "servings": 1,
+    "ingredients": ["Bread", "Vegetables", "Butter", "Sauce"],
+    "steps": ["Toast bread", "Add veggies", "Spread sauce", "Assemble"]
   },
   {
     "id": 10,
@@ -87,7 +105,9 @@
     "category": "Fast Food",
     "image": "https://img.freepik.com/free-photo/delicious-chicken-burger_2829-18850.jpg",
     "calories": 480,
-    "servings": 1
+    "servings": 1,
+    "ingredients": ["Chicken patty", "Bun", "Lettuce", "Sauce"],
+    "steps": ["Cook patty", "Toast bun", "Assemble burger"]
   },
   {
     "id": 11,
@@ -96,7 +116,9 @@
     "category": "Indian",
     "image": "https://img.freepik.com/free-photo/indian-dal-tadka-served-bowl_466689-738.jpg",
     "calories": 260,
-    "servings": 2
+    "servings": 2,
+    "ingredients": ["Lentils", "Ghee", "Spices", "Garlic"],
+    "steps": ["Boil dal", "Prepare tadka", "Mix and simmer"]
   },
   {
     "id": 12,
@@ -105,7 +127,9 @@
     "category": "Seafood",
     "image": "https://img.freepik.com/free-photo/spicy-fried-prawns_2829-18851.jpg",
     "calories": 340,
-    "servings": 2
+    "servings": 2,
+    "ingredients": ["Prawns", "Spices", "Oil", "Lemon"],
+    "steps": ["Marinate prawns", "Heat oil", "Fry until crisp"]
   },
   {
     "id": 13,
@@ -114,7 +138,9 @@
     "category": "Italian",
     "image": "https://img.freepik.com/free-photo/vegetarian-pizza-with-tomatoes-olives_2829-18852.jpg",
     "calories": 410,
-    "servings": 2
+    "servings": 2,
+    "ingredients": ["Pizza base", "Vegetables", "Cheese", "Sauce"],
+    "steps": ["Spread sauce", "Add toppings", "Bake"]
   },
   {
     "id": 14,
@@ -123,7 +149,9 @@
     "category": "Middle Eastern",
     "image": "https://img.freepik.com/free-photo/chicken-shawarma-wrap_2829-18853.jpg",
     "calories": 390,
-    "servings": 1
+    "servings": 1,
+    "ingredients": ["Chicken", "Spices", "Pita bread", "Sauce"],
+    "steps": ["Cook chicken", "Prepare wrap", "Assemble"]
   },
   {
     "id": 15,
@@ -132,7 +160,9 @@
     "category": "Healthy",
     "image": "https://img.freepik.com/free-photo/fresh-fruit-salad-bowl_2829-18854.jpg",
     "calories": 120,
-    "servings": 1
+    "servings": 1,
+    "ingredients": ["Mixed fruits", "Honey", "Mint"],
+    "steps": ["Cut fruits", "Mix", "Add honey"]
   },
   {
     "id": 16,
@@ -141,7 +171,9 @@
     "category": "Indian",
     "image": "https://img.freepik.com/free-photo/mutton-biryani-served-bowl_466689-739.jpg",
     "calories": 560,
-    "servings": 3
+    "servings": 3,
+    "ingredients": ["Mutton", "Rice", "Spices", "Yogurt"],
+    "steps": ["Cook mutton", "Prepare rice", "Layer and steam"]
   },
   {
     "id": 17,
@@ -150,7 +182,9 @@
     "category": "Asian",
     "image": "https://img.freepik.com/free-photo/steamed-vegetable-dumplings_2829-18855.jpg",
     "calories": 200,
-    "servings": 1
+    "servings": 1,
+    "ingredients": ["Dough", "Vegetables", "Spices"],
+    "steps": ["Prepare filling", "Shape momos", "Steam"]
   },
   {
     "id": 18,
@@ -159,7 +193,9 @@
     "category": "Asian",
     "image": "https://img.freepik.com/free-photo/chicken-fried-rice-bowl_2829-18856.jpg",
     "calories": 430,
-    "servings": 2
+    "servings": 2,
+    "ingredients": ["Rice", "Chicken", "Vegetables", "Soy sauce"],
+    "steps": ["Cook chicken", "Add vegetables", "Mix rice", "Stir fry"]
   },
   {
     "id": 19,
@@ -168,7 +204,9 @@
     "category": "Healthy",
     "image": "https://img.freepik.com/free-photo/vegetable-soup-bowl_2829-18857.jpg",
     "calories": 110,
-    "servings": 1
+    "servings": 1,
+    "ingredients": ["Vegetables", "Water", "Salt", "Pepper"],
+    "steps": ["Boil vegetables", "Blend", "Season"]
   },
   {
     "id": 20,
@@ -177,6 +215,8 @@
     "category": "Western",
     "image": "https://img.freepik.com/free-photo/bbq-chicken-wings_2829-18858.jpg",
     "calories": 500,
-    "servings": 2
+    "servings": 2,
+    "ingredients": ["Chicken wings", "BBQ sauce", "Spices"],
+    "steps": ["Marinate wings", "Bake or grill", "Brush with sauce"]
   }
 ]
