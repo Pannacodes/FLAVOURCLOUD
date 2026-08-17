@@ -15,6 +15,14 @@ export default function Sidebar() {
         <li onClick={() => navigate("/categories")}>
           Categories
           </li>
+
+          <li onClick={() => navigate("/Favorites")}>
+          Favorites
+          </li>
+
+          <li onClick={() => navigate("/Veg-nonveg")}>
+          Veg / Non-Veg
+          </li>
       </ul>
     </aside>
   );
