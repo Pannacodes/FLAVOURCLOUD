@@ -2,13 +2,12 @@
 
 import { useNavigate } from "react-router-dom";
 
-const RecipeItem = ({ recipe, onDelete }) => {
+const RecipeItem = ({ recipe, onDelete, toggleFavorite, isFav }) => {
   const navigate = useNavigate();
 
-const handleEdit = () => {
+  const handleEdit = () => {
     navigate(`/recipes/${recipe.id}/edit`);
   };
-
 
   return (
     <li className="recipe-item">
@@ -34,6 +33,11 @@ const handleEdit = () => {
         className="edit-btn"
         onClick={handleEdit}>
         Edit
+      </button>
+
+       {/* Favorite button */}
+       <button onClick={() => toggleFavorite(recipe)}>
+        {isFav ? "❤️ Remove Favorite" : "🤍 Add to Favorites"}
       </button>
 
     </li>

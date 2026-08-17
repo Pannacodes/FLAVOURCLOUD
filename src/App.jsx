@@ -15,6 +15,7 @@ import AllRecipes from "./pages/AllRecipes.jsx";
 import UpdateRecipeForm from "./components/UpdateRecipeForm.jsx";
 import AddRecipeForm from "./components/RecipeForm.jsx";
 import Categories from "./pages/Categories.jsx";
+import { FavoritesProvider } from "./components/FavoriteContext.jsx";
 
 import { Route, Routes } from "react-router-dom";
 
@@ -28,7 +29,7 @@ function App() {
   };
 
   return (
-    <>
+    <FavoritesProvider>
       <Navbar />
 
       <div className="main-layout">
@@ -80,7 +81,7 @@ function App() {
       </div>
 
       <Footer />
-    </>
+    </FavoritesProvider>
   );
 }
 
