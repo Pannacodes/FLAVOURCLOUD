@@ -24,7 +24,6 @@ body,
 #root {
   max-width: 100%;
   overflow-x: hidden;
-  height: 100%;
 }
 body {
   margin: 0;
@@ -32,10 +31,6 @@ body {
   background: var(--cream);
   font-family: Inter, ui-sans-serif, system-ui, sans-serif;
   line-height: 1.6;
-}
-#root {
-  display: flex;
-  flex-direction: column;
 }
 button,
 input,
@@ -72,21 +67,17 @@ p {
 }
 .main-layout {
   display: flex;
-  flex: 1;
-  padding-top: 96px;
-  min-height: 0;
+  min-height: calc(100vh - 96px);
 }
 .main-layout main {
   flex: 1;
   width: calc(100% - 290px);
   margin-left: 270px;
   padding: var(--spacing-lg) var(--spacing-xl);
-  overflow-y: auto;
-  min-height: 0;
+  min-height: calc(100vh - 96px);
   background: var(--cream);
 }
 .footer {
-  flex-shrink: 0;
   width: 100%;
 }
 .dashboard,
@@ -432,13 +423,12 @@ textarea:focus {
 }
 .footer {
   margin-left: 270px;
-  padding: 30px;
   background: #edf2ea;
   border-top: 1px solid var(--line);
 }
 @media (max-width: 820px) {
   .main-layout {
-    padding: 160px 18px 28px;
+    padding: 40px 18px 28px;
   }
   .main-layout main {
     width: 100%;
@@ -456,7 +446,7 @@ textarea:focus {
 }
 @media (max-width: 560px) {
   .main-layout {
-    padding: 192px 12px 24px;
+    padding: 40px 12px 24px;
   }
   .recipe-item {
     padding: 18px;
