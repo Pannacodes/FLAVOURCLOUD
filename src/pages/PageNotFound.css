@@ -31,6 +31,32 @@
   box-shadow: 0 4px 12px rgba(38, 61, 48, 0.08);
   margin-bottom: var(--spacing-xl);
 }
+.page-not-found-image {
+  margin-top: var(--spacing-xl);
+  padding: var(--spacing-lg);
+  background: var(--sage-pale);
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 200px;
+}
+.animated-chef {
+  width: 100%;
+  max-width: 280px;
+  height: auto;
+  object-fit: contain;
+  animation: float 3s ease-in-out infinite;
+}
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-12px);
+  }
+}
 .page-not-found a {
   display: inline-block;
   padding: 0.85rem 2rem;

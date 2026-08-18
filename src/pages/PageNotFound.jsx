@@ -7,6 +7,13 @@ const NotFound = () => {
         <h1>404</h1>
         <h2>Page Not Found</h2>
         <p>The page you are looking for does not exist or has been moved.</p>
+        <div className="page-not-found-image">
+          <img 
+            src="https://media.giphy.com/media/xT9IgEx8SbQ0teblZm/giphy.gif" 
+            alt="Chef cooking animation - Recipe not found"
+            className="animated-chef"
+          />
+        </div>
       </div>
       <p>Let's get you back on track:</p>
       <a href="/">← Back to Home</a>
