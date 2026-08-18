@@ -6,6 +6,7 @@
   width: 270px;
   height: calc(100vh - 96px);
   overflow-y: auto;
+  overflow-x: hidden;
   padding: var(--spacing-lg) var(--spacing-md);
   border-right: 1px solid var(--line);
   background: #f2f6ef;
