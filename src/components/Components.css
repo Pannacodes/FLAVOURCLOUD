@@ -1,0 +1,105 @@
+/* Recipe Form Styling */
+.add-recipe-form,
+.update-recipe-form {
+  max-width: 700px;
+  margin: var(--spacing-lg) auto;
+  padding: var(--spacing-lg);
+  border: 1px solid var(--line);
+  border-radius: 20px;
+  background: var(--surface);
+  box-shadow: 0 12px 30px rgba(38, 61, 48, 0.08);
+}
+.add-recipe-form h2,
+.update-recipe-form h1,
+.update-recipe-form h2 {
+  margin-bottom: var(--spacing-lg);
+  font-size: clamp(1.4rem, 2vw, 1.8rem);
+  color: var(--sage-dark);
+}
+.add-recipe-form label,
+.update-recipe-form label {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: var(--spacing-lg);
+  font-weight: 600;
+  color: var(--ink);
+  font-size: 1rem;
+}
+.add-recipe-form input,
+.add-recipe-form select,
+.add-recipe-form textarea,
+.update-recipe-form input,
+.update-recipe-form select,
+.update-recipe-form textarea {
+  margin-top: var(--spacing-sm);
+  padding: var(--spacing-md);
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  background: #fcfdf9;
+  font-size: 0.95rem;
+  transition: border-color 0.18s, box-shadow 0.18s, background 0.18s;
+  color: var(--ink);
+  font-family: inherit;
+}
+.add-recipe-form input:hover,
+.add-recipe-form select:hover,
+.add-recipe-form textarea:hover,
+.update-recipe-form input:hover,
+.update-recipe-form select:hover,
+.update-recipe-form textarea:hover {
+  border-color: var(--sage);
+  background: var(--surface);
+}
+.add-recipe-form input:focus,
+.add-recipe-form select:focus,
+.add-recipe-form textarea:focus,
+.update-recipe-form input:focus,
+.update-recipe-form select:focus,
+.update-recipe-form textarea:focus {
+  outline: none;
+  border-color: var(--sage);
+  background: var(--surface);
+  box-shadow: 0 0 0 3px rgba(73, 116, 94, 0.1);
+}
+.add-recipe-form textarea,
+.update-recipe-form textarea {
+  min-height: 100px;
+  resize: vertical;
+  font-family: 'Courier New', monospace;
+}
+.add-recipe-form button,
+.update-recipe-form button {
+  width: 100%;
+  margin-top: var(--spacing-lg);
+  padding: 0.85rem 1.5rem;
+  font-size: 1rem;
+  border: 0;
+  border-radius: 10px;
+  background: var(--sage);
+  color: white;
+  font-weight: 700;
+  cursor: pointer;
+  transition: 0.18s;
+}
+.add-recipe-form button:hover,
+.update-recipe-form button:hover {
+  background: var(--sage-dark);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 14px rgba(49, 83, 64, 0.2);
+}
+/* Recipe List Styling */
+.recipe-list {
+  width: 100%;
+  margin-top: var(--spacing-md);
+}
+.recipe-list h2 {
+  font-size: clamp(1.6rem, 2.5vw, 2rem);
+  letter-spacing: -0.02em;
+  margin-bottom: var(--spacing-lg);
+  color: var(--sage-dark);
+}
+.recipe-list ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}

@@ -1,6 +1,7 @@
 import AddRecipeForm from "../components/RecipeForm";
 import RecipeList from "../components/RecipeList";
 import { useState } from "react";
+import "./Home.css";
 
 const Home = ({ recipes, onDelete, setRecipes }) => {
 const [showForm, setShowForm] = useState(false);

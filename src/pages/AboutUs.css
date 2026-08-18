@@ -1,0 +1,75 @@
+.about-page {
+  width: 100%;
+  margin: 0 auto;
+  padding: var(--spacing-lg);
+}
+.about-page h1 {
+  font-size: clamp(1.8rem, 3vw, 2.5rem);
+  letter-spacing: -0.04em;
+  margin-bottom: var(--spacing-xl);
+  text-align: center;
+  color: var(--sage-dark);
+}
+.about-page section {
+  margin-bottom: var(--spacing-2xl);
+  padding: var(--spacing-xl);
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  background: var(--surface);
+  box-shadow: 0 2px 8px rgba(38, 61, 48, 0.05);
+}
+.about-page section h2 {
+  font-size: 1.6rem;
+  color: var(--sage-dark);
+  margin-bottom: var(--spacing-lg);
+  padding-bottom: var(--spacing-md);
+  border-bottom: 2px solid var(--line);
+}
+.about-page section p {
+  font-size: 1rem;
+  line-height: 1.8;
+  color: var(--ink);
+  margin-bottom: var(--spacing-md);
+}
+.about-page section p:last-child {
+  margin-bottom: 0;
+}
+.team-member {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: var(--spacing-lg);
+  background: var(--sage-pale);
+  border-radius: 12px;
+  margin-bottom: var(--spacing-lg);
+  transition: 0.18s;
+}
+.team-member:hover {
+  box-shadow: 0 4px 12px rgba(73, 116, 94, 0.15);
+  transform: translateY(-2px);
+}
+.team-member:last-child {
+  margin-bottom: 0;
+}
+.team-member h3 {
+  margin-bottom: var(--spacing-md);
+  font-size: 1.3rem;
+  color: var(--sage-dark);
+}
+.team-member a {
+  display: inline-block;
+  margin: var(--spacing-xs) var(--spacing-sm);
+  padding: 0.6rem 1.2rem;
+  background: var(--sage);
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: 700;
+  font-size: 0.95rem;
+  transition: 0.18s;
+}
+.team-member a:hover {
+  background: var(--sage-dark);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(49, 83, 64, 0.2);
+}

@@ -1,0 +1,10 @@
+.dashboard {
+  width: 100%;
+  margin: 0 auto;
+}
+.dashboard h1 {
+  font-size: clamp(2rem, 4vw, 2.8rem);
+  letter-spacing: -0.02em;
+  margin-bottom: var(--spacing-lg);
+  color: var(--sage-dark);
+}

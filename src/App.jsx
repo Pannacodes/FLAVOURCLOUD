@@ -88,6 +88,7 @@ function App() {
           </Routes>
         </main>
       </div>
+      
 
       <Footer />
     </FavoritesProvider>

@@ -1,4 +1,5 @@
 import { useNavigate } from "react-router-dom";
+import "./Categories.css";
 
 const Categories = ({ recipes }) => {
   const navigate = useNavigate();

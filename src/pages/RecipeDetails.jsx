@@ -1,4 +1,5 @@
 import { useParams, useNavigate } from "react-router-dom";
+import "./RecipeDetails.css";
 
 const ItemDetails = ({ recipes }) => {
   const { id } = useParams();
