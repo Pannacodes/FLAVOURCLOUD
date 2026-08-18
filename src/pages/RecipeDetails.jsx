@@ -65,6 +65,7 @@ const ItemDetails = ({ recipes }) => {
           <li key={index}>{step}</li>
         ))}
       </ol>
+      
       <div className="recipe-actions">
         <button className="edit-btn" onClick={handleEdit}>
           Edit
